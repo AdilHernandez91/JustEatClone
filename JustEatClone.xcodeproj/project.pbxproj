@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05B682942179115D13FDE1E2 /* Pods_JustEatClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6078B49080722B34CC8427 /* Pods_JustEatClone.framework */; };
 		DE109B0223043EC1003CFEA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE109B0123043EC1003CFEA9 /* AppDelegate.swift */; };
-		DE109B0423043EC1003CFEA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE109B0323043EC1003CFEA9 /* ViewController.swift */; };
 		DE109B0723043EC1003CFEA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE109B0523043EC1003CFEA9 /* Main.storyboard */; };
 		DE109B0923043EC2003CFEA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE109B0823043EC2003CFEA9 /* Assets.xcassets */; };
 		DE109B0C23043EC2003CFEA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE109B0A23043EC2003CFEA9 /* LaunchScreen.storyboard */; };
+		DE109B1923043FE1003CFEA9 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE109B1823043FE1003CFEA9 /* Onboarding.storyboard */; };
+		DE109B1B2304403A003CFEA9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE109B1A2304403A003CFEA9 /* Constants.swift */; };
+		DE109B1D230443BD003CFEA9 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE109B1C230443BC003CFEA9 /* AuthViewController.swift */; };
+		DE109B1F230447FA003CFEA9 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE109B1E230447FA003CFEA9 /* RestaurantsViewController.swift */; };
+		DE109B2123044A52003CFEA9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE109B2023044A52003CFEA9 /* RoundedButton.swift */; };
+		DE109B2323045440003CFEA9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE109B2223045440003CFEA9 /* LoginViewController.swift */; };
+		DE109B25230455DC003CFEA9 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE109B24230455DC003CFEA9 /* RoundedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		344D2103FF33CA5031338B60 /* Pods-JustEatClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEatClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustEatClone/Pods-JustEatClone.debug.xcconfig"; sourceTree = "<group>"; };
+		5133C977577819297AF9AF98 /* Pods-JustEatClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEatClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustEatClone/Pods-JustEatClone.release.xcconfig"; sourceTree = "<group>"; };
+		CC6078B49080722B34CC8427 /* Pods_JustEatClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustEatClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE109AFE23043EC1003CFEA9 /* JustEatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustEatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE109B0123043EC1003CFEA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE109B0323043EC1003CFEA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE109B0623043EC1003CFEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE109B0823043EC2003CFEA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE109B0B23043EC2003CFEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE109B0D23043EC2003CFEA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE109B1823043FE1003CFEA9 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		DE109B1A2304403A003CFEA9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DE109B1C230443BC003CFEA9 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		DE109B1E230447FA003CFEA9 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		DE109B2023044A52003CFEA9 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		DE109B2223045440003CFEA9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DE109B24230455DC003CFEA9 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B682942179115D13FDE1E2 /* Pods_JustEatClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E62CA2F2035EBB2D594FE5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				344D2103FF33CA5031338B60 /* Pods-JustEatClone.debug.xcconfig */,
+				5133C977577819297AF9AF98 /* Pods-JustEatClone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2840238452FB4CB396613452 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC6078B49080722B34CC8427 /* Pods_JustEatClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE109AF523043EC1003CFEA9 = {
 			isa = PBXGroup;
 			children = (
 				DE109B0023043EC1003CFEA9 /* JustEatClone */,
 				DE109AFF23043EC1003CFEA9 /* Products */,
+				1E62CA2F2035EBB2D594FE5C /* Pods */,
+				2840238452FB4CB396613452 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +90,60 @@
 		DE109B0023043EC1003CFEA9 /* JustEatClone */ = {
 			isa = PBXGroup;
 			children = (
+				DE109B1723043FC2003CFEA9 /* Model */,
+				DE109B1623043FBA003CFEA9 /* View */,
+				DE109B1323043F7B003CFEA9 /* Controller */,
+				DE109B1423043F8B003CFEA9 /* Storyboards */,
+				DE109B1523043FA4003CFEA9 /* Resources */,
+				DE109B1A2304403A003CFEA9 /* Constants.swift */,
 				DE109B0123043EC1003CFEA9 /* AppDelegate.swift */,
-				DE109B0323043EC1003CFEA9 /* ViewController.swift */,
-				DE109B0523043EC1003CFEA9 /* Main.storyboard */,
-				DE109B0823043EC2003CFEA9 /* Assets.xcassets */,
-				DE109B0A23043EC2003CFEA9 /* LaunchScreen.storyboard */,
 				DE109B0D23043EC2003CFEA9 /* Info.plist */,
 			);
 			path = JustEatClone;
+			sourceTree = "<group>";
+		};
+		DE109B1323043F7B003CFEA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE109B1C230443BC003CFEA9 /* AuthViewController.swift */,
+				DE109B1E230447FA003CFEA9 /* RestaurantsViewController.swift */,
+				DE109B2223045440003CFEA9 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE109B1423043F8B003CFEA9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DE109B0523043EC1003CFEA9 /* Main.storyboard */,
+				DE109B0A23043EC2003CFEA9 /* LaunchScreen.storyboard */,
+				DE109B1823043FE1003CFEA9 /* Onboarding.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DE109B1523043FA4003CFEA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE109B0823043EC2003CFEA9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE109B1623043FBA003CFEA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE109B2023044A52003CFEA9 /* RoundedButton.swift */,
+				DE109B24230455DC003CFEA9 /* RoundedTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE109B1723043FC2003CFEA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE109B1023043EC2003CFEA9 /* Build configuration list for PBXNativeTarget "JustEatClone" */;
 			buildPhases = (
+				CE8A47647EF229E5A17FBB58 /* [CP] Check Pods Manifest.lock */,
 				DE109AFA23043EC1003CFEA9 /* Sources */,
 				DE109AFB23043EC1003CFEA9 /* Frameworks */,
 				DE109AFC23043EC1003CFEA9 /* Resources */,
+				71D14A683834184EDAC19151 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,18 +209,63 @@
 				DE109B0C23043EC2003CFEA9 /* LaunchScreen.storyboard in Resources */,
 				DE109B0923043EC2003CFEA9 /* Assets.xcassets in Resources */,
 				DE109B0723043EC1003CFEA9 /* Main.storyboard in Resources */,
+				DE109B1923043FE1003CFEA9 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71D14A683834184EDAC19151 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JustEatClone/Pods-JustEatClone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustEatClone/Pods-JustEatClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE8A47647EF229E5A17FBB58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JustEatClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE109AFA23043EC1003CFEA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE109B0423043EC1003CFEA9 /* ViewController.swift in Sources */,
+				DE109B2323045440003CFEA9 /* LoginViewController.swift in Sources */,
 				DE109B0223043EC1003CFEA9 /* AppDelegate.swift in Sources */,
+				DE109B2123044A52003CFEA9 /* RoundedButton.swift in Sources */,
+				DE109B1F230447FA003CFEA9 /* RestaurantsViewController.swift in Sources */,
+				DE109B25230455DC003CFEA9 /* RoundedTextField.swift in Sources */,
+				DE109B1B2304403A003CFEA9 /* Constants.swift in Sources */,
+				DE109B1D230443BD003CFEA9 /* AuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +409,7 @@
 		};
 		DE109B1123043EC2003CFEA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 344D2103FF33CA5031338B60 /* Pods-JustEatClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +428,7 @@
 		};
 		DE109B1223043EC2003CFEA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5133C977577819297AF9AF98 /* Pods-JustEatClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

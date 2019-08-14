@@ -1,0 +1,6 @@
+framework module Pods_JustEatClone {
+  umbrella header "Pods-JustEatClone-umbrella.h"
+
+  export *
+  module * { export * }
+}
