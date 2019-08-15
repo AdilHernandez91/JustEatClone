@@ -37,3 +37,9 @@ struct Fonts {
     static let Futura = "Futura"
     
 }
+
+struct Collections {
+    
+    static let Users = "users"
+    
+}

@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,14 +29,39 @@ class LoginViewController: UIViewController {
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func onLoginPressed(_ sender: Any) {
+        
+        guard let email = emailTextField.text, !email.isEmpty ,
+            let password = passwordTextField.text , !password.isEmpty else {
+                
+                showDialog(title: "Validation error", message: "Email address and password are required")
+                
+                return
+        }
+        
+        activityIndicator.startAnimating()
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            
+            if let error = error {
+                
+                self.emailTextField.reset()
+                self.passwordTextField.reset()
+                
+                debugPrint(error)
+                Auth.auth().handleAuthError(error: error, vc: self)
+                self.activityIndicator.stopAnimating()
+                
+            }
+            else {
+                
+                self.activityIndicator.stopAnimating()
+                self.dismiss(animated: true, completion: nil)
+                
+            }
+            
+        }
+        
     }
-    */
-
+    
 }

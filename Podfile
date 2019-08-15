@@ -9,5 +9,9 @@ target 'JustEatClone' do
 
   # Pods for JustEatClone
   pod 'IQKeyboardManagerSwift'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Firestore'
 
 end

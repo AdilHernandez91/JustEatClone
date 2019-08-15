@@ -19,6 +19,10 @@
 		DE109B2123044A52003CFEA9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE109B2023044A52003CFEA9 /* RoundedButton.swift */; };
 		DE109B2323045440003CFEA9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE109B2223045440003CFEA9 /* LoginViewController.swift */; };
 		DE109B25230455DC003CFEA9 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE109B24230455DC003CFEA9 /* RoundedTextField.swift */; };
+		DEE1E9B22305549B008D9260 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE1E9B12305549B008D9260 /* Extensions.swift */; };
+		DEE1E9B4230558E3008D9260 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEE1E9B3230558E3008D9260 /* GoogleService-Info.plist */; };
+		DEE1E9B623056C6B008D9260 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE1E9B523056C6B008D9260 /* RegisterViewController.swift */; };
+		DEE1E9B8230572D5008D9260 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE1E9B7230572D5008D9260 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		DE109B2023044A52003CFEA9 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		DE109B2223045440003CFEA9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DE109B24230455DC003CFEA9 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		DEE1E9B12305549B008D9260 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DEE1E9B3230558E3008D9260 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DEE1E9B523056C6B008D9260 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DEE1E9B7230572D5008D9260 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +101,12 @@
 				DE109B1723043FC2003CFEA9 /* Model */,
 				DE109B1623043FBA003CFEA9 /* View */,
 				DE109B1323043F7B003CFEA9 /* Controller */,
+				DEE1E9B023055487008D9260 /* Utils */,
 				DE109B1423043F8B003CFEA9 /* Storyboards */,
 				DE109B1523043FA4003CFEA9 /* Resources */,
 				DE109B1A2304403A003CFEA9 /* Constants.swift */,
 				DE109B0123043EC1003CFEA9 /* AppDelegate.swift */,
+				DEE1E9B3230558E3008D9260 /* GoogleService-Info.plist */,
 				DE109B0D23043EC2003CFEA9 /* Info.plist */,
 			);
 			path = JustEatClone;
@@ -108,6 +118,7 @@
 				DE109B1C230443BC003CFEA9 /* AuthViewController.swift */,
 				DE109B1E230447FA003CFEA9 /* RestaurantsViewController.swift */,
 				DE109B2223045440003CFEA9 /* LoginViewController.swift */,
+				DEE1E9B523056C6B008D9260 /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -142,8 +153,17 @@
 		DE109B1723043FC2003CFEA9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DEE1E9B7230572D5008D9260 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DEE1E9B023055487008D9260 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DEE1E9B12305549B008D9260 /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +228,7 @@
 			files = (
 				DE109B0C23043EC2003CFEA9 /* LaunchScreen.storyboard in Resources */,
 				DE109B0923043EC2003CFEA9 /* Assets.xcassets in Resources */,
+				DEE1E9B4230558E3008D9260 /* GoogleService-Info.plist in Resources */,
 				DE109B0723043EC1003CFEA9 /* Main.storyboard in Resources */,
 				DE109B1923043FE1003CFEA9 /* Onboarding.storyboard in Resources */,
 			);
@@ -223,11 +244,27 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JustEatClone/Pods-JustEatClone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -259,12 +296,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE1E9B623056C6B008D9260 /* RegisterViewController.swift in Sources */,
 				DE109B2323045440003CFEA9 /* LoginViewController.swift in Sources */,
 				DE109B0223043EC1003CFEA9 /* AppDelegate.swift in Sources */,
 				DE109B2123044A52003CFEA9 /* RoundedButton.swift in Sources */,
+				DEE1E9B22305549B008D9260 /* Extensions.swift in Sources */,
 				DE109B1F230447FA003CFEA9 /* RestaurantsViewController.swift in Sources */,
 				DE109B25230455DC003CFEA9 /* RoundedTextField.swift in Sources */,
 				DE109B1B2304403A003CFEA9 /* Constants.swift in Sources */,
+				DEE1E9B8230572D5008D9260 /* User.swift in Sources */,
 				DE109B1D230443BD003CFEA9 /* AuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

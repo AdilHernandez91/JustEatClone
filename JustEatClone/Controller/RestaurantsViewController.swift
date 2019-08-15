@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RestaurantsViewController: UIViewController {
     
@@ -16,7 +17,28 @@ class RestaurantsViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        presentOnboarding()
+        
+        if !Auth.auth().isAuthenticated() {
+    
+            presentOnboarding()
+            
+        }
+        
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func onLogoutPressed(_ sender: Any) {
+        
+        do {
+            try Auth.auth().signOut()
+            presentOnboarding()
+        }
+        catch {
+            debugPrint(error)
+            Auth.auth().handleAuthError(error: error, vc: self)
+        }
+        
     }
     
     private func presentOnboarding() {
