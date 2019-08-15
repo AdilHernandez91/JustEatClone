@@ -40,26 +40,32 @@ class LoginViewController: UIViewController {
         }
         
         activityIndicator.startAnimating()
+        authenticate(email: email, password: password)
+        
+    }
+    
+}
+
+extension LoginViewController {
+    
+    private func authenticate(email: String, password: String) {
+        
+        activityIndicator.startAnimating()
         
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
-            
             if let error = error {
-                
                 self.emailTextField.reset()
                 self.passwordTextField.reset()
                 
                 debugPrint(error)
                 Auth.auth().handleAuthError(error: error, vc: self)
-                self.activityIndicator.stopAnimating()
                 
+                self.activityIndicator.stopAnimating()
             }
             else {
-                
                 self.activityIndicator.stopAnimating()
                 self.dismiss(animated: true, completion: nil)
-                
             }
-            
         }
         
     }

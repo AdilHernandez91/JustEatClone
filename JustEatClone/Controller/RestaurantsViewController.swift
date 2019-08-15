@@ -19,9 +19,7 @@ class RestaurantsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         if !Auth.auth().isAuthenticated() {
-    
             presentOnboarding()
-            
         }
         
     }
@@ -40,6 +38,10 @@ class RestaurantsViewController: UIViewController {
         }
         
     }
+    
+}
+
+extension RestaurantsViewController {
     
     private func presentOnboarding() {
         let storyboard = UIStoryboard(name: Storyboard.Onboarding, bundle: nil)

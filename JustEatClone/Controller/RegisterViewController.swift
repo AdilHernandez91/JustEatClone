@@ -16,8 +16,6 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    let db = Firestore.firestore()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,14 +25,10 @@ class RegisterViewController: UIViewController {
     // MARK - Actions
     
     @IBAction func onClosePressed(_ sender: Any) {
-        
         dismiss(animated: true, completion: nil)
-        
     }
     
-    
     @IBAction func onSignUpPressed(_ sender: Any) {
-        
         guard let username = usernameTextField.text , username.isNotEmpty ,
             let password = passwordTextField.text , password.isNotEmpty ,
             let email = emailTextField.text , email.isNotEmpty else {
@@ -44,6 +38,13 @@ class RegisterViewController: UIViewController {
                 return
         }
         
+        createUser(email: email, password: password, username: username)
+    }
+}
+
+extension RegisterViewController {
+    
+    private func createUser(email: String, password: String, username: String) {
         activityIndicator.startAnimating()
         
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
@@ -60,25 +61,39 @@ class RegisterViewController: UIViewController {
                 self.createFirestoreUser(user: user)
             }
         }
-        
     }
     
     private func createFirestoreUser(user: User) {
-        let newUserRef = db.collection(Collections.Users).document(user.id)
+        let newUserRef = Firestore.firestore().collection(Collections.Users).document(user.id)
         
         let data = User.modelToData(user: user)
         
         newUserRef.setData(data) { (error) in
             if let error = error {
+                self.usernameTextField.reset()
+                self.emailTextField.reset()
+                self.passwordTextField.reset()
+                
                 debugPrint(error)
                 Auth.auth().handleAuthError(error: error, vc: self)
             }
             else {
-                self.dismiss(animated: true, completion: nil)
+                self.showDialog(title: "Success", message: "Your account has been created. Please log in now.")
+                
+                self.dismiss(animated: true, completion: {
+                    self.presentMain()
+                })
             }
             
             self.activityIndicator.stopAnimating()
         }
     }
-
+    
+    private func presentMain() {
+        let storyboard = UIStoryboard(name: Storyboard.Main, bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: StoryboardId.Restaurants)
+        
+        present(controller, animated: true, completion: nil)
+    }
+    
 }
